@@ -1,0 +1,123 @@
+body{
+    transition: 700ms ease-in-out all;
+    opacity: 0;
+}
+
+main{
+    font-family: "Roboto";
+    word-spacing: 2px;
+    line-height: 1.72;
+    font-weight: 700;
+    max-width: 1200px;
+    margin:7em auto 0 auto;
+}
+
+.hero-image{
+    width: 100%;
+    height:600px;
+    transform: translateX(-1400px);
+    transition-delay: 700ms;
+    transition: 1600ms ease-in-out all;
+}
+
+.title{
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    color:#213555;
+    font-size:30px;
+    margin-block:1em 1.5em;
+}
+
+.ada-logo{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.description__container{
+    margin-top:20px;
+    padding:10px;
+    text-align: center;
+}
+
+.about-team{
+    color: #4F709C;
+    font-weight: 700;
+}
+
+.project-section{
+    margin-top:20px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    gap:30px;
+    margin-top:2em;
+    color: #213555;
+}
+
+.container > div{
+    width:100%;
+}
+
+.container img{
+    width:100%;
+    height:500px;
+}
+
+.image__container{
+    position: relative;
+    font-family: 'Crimson Pro', sans-serif;
+    color:black;
+    font-size:40px;
+    cursor: pointer;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image__container::before{
+    content: ""; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    background-size: cover; 
+    transition: 500ms ease-in-out opacity;
+}
+
+#image1::before{
+    background-image: url('../media/event.jpg');
+}
+
+#image2::before{
+    background-image: url('../media/about-us.jpg');
+}
+
+#main-image::before{
+    background-image: url("../media/bg-image.jpg");
+}
+
+.image__container:hover::before{
+    content: "";
+    opacity: 0.4;
+}
+
+.description{
+    padding:20px;
+}
+
+#main-text, .container > div{
+    position: relative;
+    transform: translateY(150px);
+    transition: 500ms all ease-in-out;
+    opacity: 0;
+}
+
+#main-text.active, .container > div.active{
+    transform:translateY(0);
+    opacity: 1;
+}
+

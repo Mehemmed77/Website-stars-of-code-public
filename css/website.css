@@ -1,0 +1,52 @@
+main{
+    font-family: "Archivo Narrow";
+    word-spacing: 2px;
+    line-height: 1.72;
+    font-weight: 700;
+    max-width: 1200px;
+    margin:7em auto 0 auto;
+    color: #213555;
+}
+
+.title{
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.info-section{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-bottom: 3em;
+}
+
+.profiles{
+    margin-block: 1em 2em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    text-align: center;
+}
+
+.frame{
+    padding: 20px;
+    width:100%;
+    border:5px solid #efefef;
+    border-radius: 5px;
+}
+
+.profile-name{
+    font-size:24px;
+    margin-bottom: 15px;
+}
+
+a:hover{
+    opacity: 1 !important;
+}

@@ -1,0 +1,120 @@
+main{
+    font-family: "Roboto";
+    word-spacing: 2px;
+    line-height: 1.72;
+    font-weight: 700;
+    max-width: 1200px;
+    margin:7em auto 0 auto;
+}
+
+.hero-image-container{
+    position: relative;
+    transition: 800ms all ease-in-out;
+    opacity: 0;
+    margin-block: 5em;
+    z-index: 0;
+}
+
+.bg-image{
+    background-image: url("../media/hero-image.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:blur(3px);
+}
+
+.main-text{
+    background-color: rgba(0,0,0, 0.4);
+    font-family: "Archivo Narrow";
+    color: white;
+    border: 3px solid #F5EFE7;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+}
+
+.information{
+    border-radius: 5px;
+}
+
+.info__container{
+    display: flex;
+    gap:2em;
+    font-family: "Roboto";
+    margin-block: 3em;
+}
+
+.info-image.first{
+    background-image: url("../media/info4.jpg");
+}
+
+.info-image.second{
+    background-image: url("../media/info2.jpg");
+}
+
+.info-image{
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width:100%;
+    transition: 300ms all ease-in-out;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+
+.child{
+    background-color: #4F709C;
+    color: #F5EFE7;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    transition: 600ms all ease-in-out;
+    opacity: 0;
+}
+
+.info-text {
+    position: absolute;
+    z-index: 1; /* Adjust the z-index value */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 300ms all ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Crimson Pro";
+}
+
+
+.info-image:hover{
+    filter: blur(3px);
+}
+
+.info-image:hover ~ .info-text{
+    opacity: 1;
+}
+
+.info-title{
+    color: #D8C4B6;
+    margin-top:10px;
+}
+
+.info-description{
+    padding:20px;
+}
